@@ -1,0 +1,53 @@
+{
+  "name": "@hammr/cdn",
+  "version": "1.0.2",
+  "description": "Content-addressable CDN with storage abstraction (R2, S3, Memory, FileSystem)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cdn",
+    "storage",
+    "r2",
+    "s3",
+    "content-addressable",
+    "cloudflare",
+    "artifacts",
+    "cache",
+    "sha256"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@hammr/normalizer": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Edge Foundry, Inc.",
+  "license": "Apache-2.0"
+}
