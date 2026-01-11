@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/hammr-logo.png" alt="Hammr Logo" width="200"/>
+</div>
+
 # @hammr/cdn
 
 > Content-addressable CDN with storage abstraction for Cloudflare Workers, Node.js, and beyond.
